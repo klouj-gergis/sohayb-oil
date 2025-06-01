@@ -13,12 +13,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-olive text-white py-12 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+    <footer className="bg-olive text-white py-10 px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto flex flex-col gap-10 md:flex-row md:justify-between">
         
         {/* Brand Info */}
         <div className="md:w-1/3">
-          <h4 className="text-2xl font-bold">Olive Essence</h4>
+          <h4 className="text-xl sm:text-2xl font-bold">Olive Essence</h4>
           <p className="text-goldleaf mt-2 text-sm">
             Pure. Organic. Timeless.
           </p>
@@ -41,10 +41,10 @@ export default function Footer() {
           {subscribed ? (
             <p className="text-green-300 text-sm">Thank you for subscribing!</p>
           ) : (
-            <form onSubmit={handleSubscribe} className="flex flex-col gap-2">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row sm:items-center gap-2">
               <input
                 type="email"
-                className="p-2 rounded text-olive bg-white focus:outline-none"
+                className="w-full sm:w-auto flex-1 p-2 rounded text-olive bg-white focus:outline-none text-sm"
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -52,7 +52,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="bg-goldleaf text-darkolive px-4 py-2 rounded hover:opacity-90 transition"
+                className="bg-goldleaf text-darkolive px-4 py-2 rounded hover:opacity-90 transition text-sm"
               >
                 Subscribe
               </button>
