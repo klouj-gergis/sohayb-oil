@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://klouj-gergis.github.io/<repository-name>",
+  "homepage": "https://klouj-gergis.github.io/sohayb-oil",
   "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
